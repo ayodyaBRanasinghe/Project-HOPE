@@ -7,12 +7,10 @@ body {
   padding: 10px;
   background: #f1f1f1;
 }
-h3{text-align:center;
-	padding:10px 10px;
-}
-h2{
-	background-color:black;
-	color:white;
+h3{
+	text-align:center;
+	color:black;
+	padding:10px 10px;"
 }
 /* Header/Blog Title */
 .header {
@@ -57,7 +55,7 @@ h2{
 .leftcolumn {   
   float: left;
   width: 75%;
-  background-color: transparent;
+  background-color: #f1f1f1;
   padding-left: 20px;
 }
 
@@ -65,8 +63,16 @@ h2{
 .rightcolumn {
   float: right;
   width: 25%;
-  background-color: transparent;
+  background-color: #f1f1f1;
   padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height:210px;
+  padding: 20px;
 }
 
 /* Clear floats after the columns */
@@ -75,15 +81,7 @@ h2{
   display: table;
   clear: both;
 }
-.bt{
-	margin-top:20px;
-	border:1px solid white;
-	width:98%;
-	background-color:#000b;
-	color:white;
-	font-size:20px;
-	padding-left:50px;
-}
+
 /* Responsive layout - when the screen is less than 800px wide,
  make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {.rightcolumn, .leftcolumn}
@@ -97,6 +95,7 @@ h2{
 }
 /*menue button style*/
 .btn{
+	
 	width:100%;
 	height:100%;
 	padding:5px 5px;
@@ -120,6 +119,7 @@ padding-top:5px;
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: BLACK;
   min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -127,36 +127,53 @@ padding-top:5px;
 
 .dropdown-content a {
   float: none;
-  color: Green;
-  padding: 8px 8px;
+  color: WHITE;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-  background-color:white;
-  border:3px solid #abc;
-  text-align:center;
-  width:70%;
-  margin-top:2px;
 }
-#myInput:focus {outline: 3px solid #ddd;}
-#myInput{width:100%;height:40px;}
+
 .dropdown-content a:hover {
-  background-color: yellow;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*Facebook box*/
+.fb-page{
+	width:90%;
+	height:140px;
+	margin-left:20px;
+	margin-top:100px;
+	margin-bottom:60px;
+	background-color:white;
+	border:1px solid black;
+}
 /*News update*/
 .newsimage{
 	float:left;
-	width:15%;
+	width:20%;
 	height:200px;
-	margin-left:4%;
-	border-radius:10px;
+	border:2px solid #bbb;
+	background-color:white;
 	text-align:center;
 }
+.bodbox	{
+	height:600px;
+	background-color:#abc;
+}
 
+.bobbox2{
+	float:left;
+	width:32.9%;
+	height:195px;
+	text-align:center;
+	margin:0.2% 0.2%;
+	border-radius:20px;
+	background-color:white;
+}
 .newsbox{
 	width:100%;
 	height:200px;
@@ -185,6 +202,8 @@ padding-top:5px;
 	width:10%;
 	margin-left:5px;
 }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -266,236 +285,4 @@ img {vertical-align: middle;}
 	text-align:center;
 }
 
-/*
-sales management*/
-.bodbox	{
-	height:900px;
-	background-color:transparent;
-}
 
-.bobbox2{
-	float:left;
-	width:200px;
-	height:200px;
-	text-align:center;
-	margin:5% 5%;
-	border-radius:20px;
-	background-color:#ffe;
-	border:1px solid #aaa;
-}
-.minh{
-	font-size:12px;
-	background-color:black;
-	color:white;
-	border-radius:18px 18px 0 0;
-	width:100%;
-	padding:6px;
-}
-/* Position the "next button" to the right */
-.next1 {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev1 {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev1:hover, .next1:hover {
-  background-color:#abc;
-}
-/* Next & previous buttons */
-.prev1, .next1 {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  background-color:transparent;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal,.modal1,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8{
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #00cc00;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%;
-  height:300px;
-  border-radius:0 50px 0 50px;
-}
-
-/* The Close Button */.close,.close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8{
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,.close1:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover,.close6:hover,.close7:hover,.close8:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.pdtail{
-	border-radius:0 150px 0 50px;
-	width:100%;
-	height:270px;
-	background-color:#66ff66;
-	color:white;
-}
-.pdimg{
-	padding:5px 5px;
-	width:200px;
-	height:200px;
-}
-.olist{
-	height:200px;
-}
-.olist2{
-	float:left;
-	width:24%;
-	height:195px;
-	text-align:center;
-	margin:0.5% 0.5%;
-	border-radius:20px 20px 0 0;
-	background-color:#abc;
-	border:2px solid black;
-}
-.coment1{
-	background-color:#001;
-	width:60%;
-	height:100px;
-	margin-left:20%;
-	margin-top:1%;
-	color:white;
-	border:5px solid red;
-	border-radius:50px 50px 0 50px;
-}
-.coment2{
-	background-color:#001;
-	width:60%;
-	height:100px;
-	margin-left:20%;
-	margin-top:1%;
-	color:white;
-
-	border:5px solid blue;
-	border-radius:50px 50px 50px 0;
-}
-.login{
-	float:left;
-	text-align:center;
-	width:98%;
-	height:400px;
-	border:1px solid black;
-	background-color:white;
-	margin-top:20px;
-}
-.logslid{
-	float:left;
-	width:30%;
-	margin:0 0;
-	padding:5px 5px;
-	height:400px;
-	border:1px solid black;
-	
-}
-.lognp{
-	float:right;
-	margin-right:50px;
-	font-size:20px;
-	background-color:black;
-	color:white;
-}
-.loginbtn{
-	background-color:black;
-	color:white;
-	font-size:25px;
-	font-family:forte;
-	float:right;
-	margin-right:150px;
-}
-.loginbtn:hover{
-	background-color:#ccc;
-}
-/* our product hansani*/
-.pcontainer {
-  position: relative;
-  max-width: 600px;
-  margin: 10px;
-  padding-right: 40px;
-}
-
-.pcontainer img {vertical-align: middle;}
-
-.pcontainer .pcontent {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 10px;
-  }
-.pnav{
-	color:white;
-	display:block;
-}
-
-/*GISHAN*/
-/*using contact_us page call,mail,fax and address icons*/
-.icon{
-	height:180px;
-	width:180px;
-	float:left;
-	padding:5px;
-	padding-right:10px;
-	
-}
-
-/*using for contact_us page call,mail,fax and address*/
-.manu{
-	background-color:#abc;
-	padding-bottom:40px;
-}
-
-/*using contact_us page google map*/
-.mapImage{
-	border: 1px solid red;
-	border-radius: 4px;
-	padding: 4px;
-	width: 75%;
-	
-}
-
-.border{
-	border-style: solid;
-	border-width: medium;
-	padding:2px;
-}
