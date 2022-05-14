@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Templete</title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<style>
+
+*{
+	box-sizing: border-box;
+}
+
+.form_body{
+	background-color: rgb(4,4,95);  
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+
+.container{               
+width: 100%;
+background-color: #fff;
+border-radius: 4px;
+overflow: hidden;
+}
+
+
+.header{                        
+	background-color: #d8d1d1;   
+	padding: 10px 20px;          
+}
+
+
+
+.form{
+padding: 50%;
+}
+
+
+
+.form_control{
+margin_bottom:10px;
+padding_bottom:10px;
+position: relative;
+}
+
+
+.form_control lable{
+display: inline-block;
+margin-bottom: 5px;
+}
+
+
+.form_control input{
+display:block;
+width:100%;
+padding:10px;
+border-radius: 4px;
+border:2px solid #d8d1d1;
+}
+
+
+
+.form_control small{
+position: absolute;
+margin: 3px;
+visibility:hidden;
+}
+
+button{
+background-color: rgb(4,4,95);
+color: #fff;
+padding:10px 20px;
+width:100%;
+border_radius:4px;
+border 2px solid rgb(4,4,95);
+cursor:pointer;
+}
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<!--*******************************************HEADER**************************************************-->
+<div class="topnav">
+<a href="#"><img src="image./logo.png"alt="HOPE" class="logo"></a>
+  <a href="#" style="float:right"><div class="btn">CONTACT US</div></a>
+  <a href="#" style="float:right"><div class="btn">HELP</div></a>
+  <a href="#" style="float:right"><div class="btn">ABOUT US</div></a>
+  <a href="#" style="float:right"><div class="btn">HOME</div></a>
+</div>
+<hr>
+<div class="topnav">
+  <div class="dropdown">
+    <button  class="dropbtn"><img src="image./menu.png" width="40px" height="35px" class="dropimage">
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div><a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+	  <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+	  <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+	  <a href="#"><div class="btn1" style="background-color:black; color:white;">JOIN IN</div></a>
+	  <a href="#"><div class="btn1" style="background-color:black; color:white;">LOG IN</div></a>
+	  </div>
+    </div>
+  </div>
+  <a href="#"><div class="btn1" style="background-color:black; color:white;">JOIN IN</div></a>
+  <a href="#"><div class="btn1" style="background-color:black; color:white;">LOG IN</div></a>
+  <a href="#" style="float:right"><div class="btn">NEWS</div></a>
+  <a href="#" style="float:right"><div class="btn">ONLINE SERVICES</div></a>
+  <a href="#" style="float:right"><div class="btn">OUR PRODUCT</div></a>
+</div>
+<!--######################################################END HEADER#######################################-->
+
+<!--***************************************************** START ROW***********************************-->
+<div class="row">
+<!--*****************************************************START LEFT COLUMN**************************-->
+	<div class="leftcolumn">
+	
+  <div class="form_body">
+  
+  <h2>E-Form</h2><hr>
+    <div class="container">
+  <div class="header">
+   
+   <h2>Request to change User Details</h2>
+  </div>
+  
+  <p>You have to fill out the bellow form to change
+  your details. If you have any concern with this 
+  please feel free to contact us.</p>
+
+  <form class="form">
+  
+
+	<h3>Your Information</h3><hr>
+	
+
+  
+  
+  <div class="form-control">
+  <label for="HOPEid" name="username">Enter your hope ID number</label>
+  <input id="txtHOPEid" type="text" name="HOPEid" />
+ </div>
+ <br><br>
+  
+ 
+  <div class="form-control ">
+  <label for="userName" name="userName">User Name</label>
+  <input id="txtuserName" type="text" name="userName" />
+ 
+  </div>
+  
+  <div class="form-control">
+  <label for="date" name="birth">Date of birth</label>
+  <input id="txtdate" type="date" name="date" />
+ 
+  </div>
+  
+    
+	
+	<h3>Change your  details</h3><hr>
+
+  
+  
+  <div class="form-control">
+  <label for="email" name="email">E mail</label>
+  <input id="txtemail" type="email" name="email" />
+
+  </div>
+  
+  <div class="form-control">
+  <button>NEXT</button>
+  </div>
+ 
+ 
+  </form>
+  </div>
+    
+</div>
+	</div>
+<!--##################################################################LEFT COLUMN END#################################-->
+
+<!--*****************************************************************START RIGHT COLUMN************************************-->
+<div class="rightcolumn">
+			  <!--Facebook like box-->
+			<div class="fb-page" 
+				data-href="https://www.facebook.com/SLjogi/" 
+					data-tabs="timeline" 
+						data-width="300" 
+							data-height="500" 
+								data-small-header="false" 
+									data-adapt-container-width="true" 
+										data-hide-cover="false" 
+											data-show-facepile="false">
+				<blockquote cite="https://www.facebook.com/SLjogi/" class="fb-xfbml-parse-ignore">
+				<a href="https://www.facebook.com/SLjogi/">LIKE HOPE Facebook</a>
+				</blockquote>
+			</div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/si_LK/sdk.js#xfbml=1&version=v10.0" nonce="WMVgBSWL"></script>
+<!--About us-->
+
+    <div style="text-align:center;">
+		<h2>About Us</h2>
+		<div><img src="image./logo.png" style="width:60%;"></div>
+		<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div style="text-align:center;">
+		<h3>Popular Product</h3>
+		<div style="width:100%;height:200px;border:1px solid black;"><img src="#"></div>
+		<div style="width:100%;height:200px;border:1px solid black;"><img src="#"></div>
+		<div style="width:100%;height:200px;border:1px solid black;"><img src="#"></div>
+	</div>
+  </div>
+ <!--###############################################################RIGHT COLUMN END###################################-->
+</div>	
+<!--###############################################################ROW END############################################-->
+
+<!--****************************************************************Start FOOTER 1************************************-->
+		<!--+++++++++++++++++++++++++++++++++++++++++++++News update slides-->
+<h4 style="text-align:center;margin:10px;padding:10px 10px;background-color:black;color:white;">News Updates</h4>
+	<div class="newsbox">
+		<div class="newsimage"><img src="image./pic.png" alt="news"></div>
+		<div class="newsimage"><img src="image./pic.png" alt="news"></div>
+		<div class="newsimage"><img src="image./pic.png" alt="news"></div>
+		<div class="newsimage"><img src="image./pic.png" alt="news"></div>
+		<div class="newsimage"><img src="image./pic.png" alt="news"></div> 
+	</div>
+<!--****************************************************************Start FOOTER 2************************************-->
+	<div class="footer">
+		<div class="footcolumn">
+		<h3><b><u>RESOURCES</u></b></h3>
+			 <a href="#">OUR PRODUCT</a><br>
+			 <a href="#">ONLINE SERVICES</a><br>
+			 <a href="#">NEWS </a><br>
+			 <b><span style='font-size:30px;'>&#128231;</span> Subcribe To Our News Letters</b>
+			 <form>
+				<input type="text" value="Email Address" id="email">
+				<input type="submit" value="submit">
+			 </form>
+		</div>
+		
+		<!--foot center-->
+		<div class="footcolumn">
+			<a href="#"><img src="image./footlogo.png"alt="HOPE"width="30%" style="padding-top:20px;"></a>
+			<br><div class="follow"><b>Follow Us On</b></div>
+			
+			<div><a href="#"><img src="image./facebook.png" class="social"></a>
+				<a href="#"><img src="image./instagram.png" class="social"></a>
+				<a href="#"><img src="image./twitter.png" class="social"></a>
+				<a href="#"><img src="image./linkedin.png" class="social"></a>
+				<a href="#"><img src="image./google-plus.png" class="social"></a>
+			</div>
+		</div>
+	
+		<!--foot right-->	
+		<div class="footcolumn">
+			<h3><span style='font-size:30px;'>&#128222;</span>Contact Us</h3>
+			<p><b>P-No-071XXXXXX<br>
+			Address-XXXXXXXX,<br>
+			XXXX.</b></p>
+			<h3>You Can Pay With</h3>
+		
+			<div>
+				<a href="#"><img src="image./visa.png" class="pay"></a>
+				<a href="#"><img src="image./mastercard.png" class="pay"></a>
+				<a href="#"><img src="image./jcb.png" class="pay"></a>
+				<a href="#"><img src="image./paypal.png" class="pay"></a>
+			</div>
+		</div>
+	</div>
+<!--##########################################################################END FOOTER#################################-->
+</body>
+</html>
